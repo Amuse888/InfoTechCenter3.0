@@ -16,5 +16,5 @@ print("\nOperation Furry's Operation System Is Booting Up\n")
 sleep(1)
 
 for i in range(3):
-    print("\033[1;31m  OS Booting Up")
+    print("\033[1;31m  OS Booting Up") #Adds OS Booting Up message that plays multiple times in the color red
     sleep(1)

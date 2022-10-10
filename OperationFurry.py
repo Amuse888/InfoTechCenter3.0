@@ -24,24 +24,24 @@ print(weatherAlert)
 def vrs(): #vrs means vehicle response system
     if weatherAlert == "Icy":
         print("\033[1;36m VRS has changed your alarm 30 minutes earlier based on the NWS forcast of",weatherAlert)
-        print("VRS will only allow your car to go 30 MPH")
+        print("VRS will only allow your car to go 50 MPH")
     elif weatherAlert == "Snow":
         print("\033[1;35m VRS has changed your alarm 15 minutes earlier based on the NWS forcast of", weatherAlert)
-        print("VRS will only allow your car to go 50 MPH")
+        print("VRS will only allow your car to go 70 MPH")
     elif weatherAlert == "Rain":
         print("\033[1;34m VRS has changed your alarm 5 minutes earlier based on the NWS forcast of", weatherAlert)
-        print("VRS will only allow your car to go 70 MPH")
+        print("VRS will only allow your car to go 90 MPH")
     elif weatherAlert == "Windy":
         print("\033[1;37m VRS has changed your alarm 5 minutes earlier based on the NWS forcast of", weatherAlert)
-        print("VRS will only allow your car to go 70 MPH")
+        print("VRS will only allow your car to go 80 MPH")
     elif weatherAlert == "Foggy":
         print("\033[1;38m VRS has changed your alarm 10 minutes earlier based on the NWS forcast of", weatherAlert)
         print("VRS will only allow your car to go 60 MPH")
     elif weatherAlert == "Storming":
         print("\033[1;30m VRS has changed your alarm 20 minutes earlier based on the NWS forcast of", weatherAlert)
         print("VRS will only allow your car to go 65 MPH")
-    else weatherAlert == "Sunny":
-        print("\033[1;33m VRS has changed your alarm 1 minutes earlier based on the NWS forcast of", weatherAlert)
+    else:
+        print("\033[1;33m VRS has changed your alarm 1 minute earlier based on the NWS forcast of", weatherAlert)
         print("VRS will allow your car to go 100 MPH")
 
 

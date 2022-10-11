@@ -10,9 +10,21 @@ condition
 
 #import library here
 import random
+from time import sleep
 
 #Gas level function
 def gaslevelgauge():
     gaslevellist = ["Empty", "Low", "Quarter Tank", "Half Tank", "Three Quarter Tank", "Full Tank"]
     currentgaslevel = random.choice(gaslevellist)
     return currentgaslevel
+
+#Variable calling the gaslevelgauge function to store value once
+gaslevelindicator = gaslevelgauge()
+
+def gaslevelalert():
+    if gaslevelindicator == "Empty":
+        print("* * *WARNING! YOU ARE ON EMPTY!* * *")
+        sleep(1.5)
+        print("Calling Emergency Contact")
+
+gaslevelalert()

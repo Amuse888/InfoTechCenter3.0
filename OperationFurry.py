@@ -1,3 +1,10 @@
+#***********************************************************************************
+#Import Libraries Here
+from time import sleep #We imported the Sleep function from the Time library
+
+import random
+#***********************************************************************************
+
 
 #Welcome Screen
 #Developer: Gabriel Westra
@@ -7,9 +14,6 @@
 Our Welcome Screen will start our program letting
 drivers know that the InfoTechCenter OS is Loading
 """
-
-#Import Libraries Here
-from time import sleep #We imported the Sleep function from the Time library
 
 print("\033[1;36m  \n\nWelcome to Operation Furry InfoTech Center \n")
 sleep(2)
@@ -33,9 +37,6 @@ random.choice function to determine what the weather is
 picking from a list - using an If, Elif, and Else statements
 to check the condition and print a specific print line
 """
-
-#Import libraries here
-import random
 
 #Weather condition list using the random.choice library
 #To randomly choose a condition and storing it in its brain

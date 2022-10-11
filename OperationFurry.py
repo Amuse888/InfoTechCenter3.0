@@ -21,10 +21,21 @@ def gaslevelgauge():
 #Variable calling the gaslevelgauge function to store value once
 gaslevelindicator = gaslevelgauge()
 
+def listofgasstations():
+    gasstation = ["Shell", "Circle K", "Marathon", "Speedway", "Meijer", "Bp", "Citgo"]
+    gasstationnearby = random.choice(gasstation)
+    return gasstationnearby
+
 def gaslevelalert():
     if gaslevelindicator == "Empty":
         print("* * *WARNING! YOU ARE ON EMPTY!* * *")
         sleep(1.5)
         print("Calling Emergency Contact")
+    elif gaslevelindicator == "Low":
+        print("* *Warning!* *")
+        sleep(1)
+        print ("You are low on gas; Checking google Maps for the closest gas station")
+        sleep(2)
+        print("The closest gas station is", listofgasstations())
 
 gaslevelalert()

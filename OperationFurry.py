@@ -28,6 +28,7 @@ def listofgasstations():
 
 def gaslevelalert():
     milestogasstation = round (random.uniform(1,25),1)
+    milestogasstationquartertank = round(random.uniform(26,50),1)
     if gaslevelindicator == "Empty":
         print("* * *WARNING! YOU ARE ON EMPTY!* * *")
         sleep(1.5)
@@ -38,5 +39,9 @@ def gaslevelalert():
         print ("You are low on gas; Checking google Maps for the closest gas station")
         sleep(2)
         print("The closest gas station is", listofgasstations(), "which is", milestogasstation, "miles away.")
+    elif gaslevelindicator == "Quarter Tank":
+        print("Your gas tank is only a quarter full. Checking Google Maps for a close gas station")
+        sleep(1.5)
+        print("A close gas station is", listofgasstations(), "which is", milestogasstationquartertank, "miles away.")
 
 gaslevelalert()

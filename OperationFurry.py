@@ -71,8 +71,6 @@ def vrs(): #vrs means vehicle response system
         print("VRS will allow your car to go 100 MPH")
 
 
-vrs()
-
 #Gasoline
 #Programer: Gabe Westra
 #Version 1.0
@@ -126,4 +124,9 @@ def gaslevelalert():
     else:
         print("\nYour gas tank is full. Have a safe drive.")
 
+
+#***********************************************************************************
+
+#Call functions here...
+vrs()
 gaslevelalert()
